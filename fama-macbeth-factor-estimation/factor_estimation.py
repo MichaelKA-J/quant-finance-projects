@@ -1,8 +1,5 @@
 import statsmodels.api as sm; import numpy as np; import pandas as pd
 
-import os
-os.chdir('/Users/michael/Documents/ECON 525/Problem Set 3')
-
 df = pd.read_excel('Fama_MacBeth.xlsx', index_col = 'Date')
 
 rf_df = pd.concat([df.RF] * 25, axis = 1) 
